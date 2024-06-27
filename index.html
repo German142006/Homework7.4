@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS в HTML</title>
+</head>
+
+<body>
+
+  <script>
+
+let ladder = {
+  step: 0, // начальная ступенька
+
+  up: function () {
+    this.step++;
+    return this; // возвращаем объект для цепочечного вызова
+  },
+
+  down: function () {
+    this.step--;
+    return this; // возвращаем объект для цепочечного вызова
+  },
+
+  showStep: function () {
+    console.log(this.step);
+    return this; // возвращаем объект для цепочечного вызова
+  }
+};
+
+
+  </script>
+
+</body>
+
+</html>
